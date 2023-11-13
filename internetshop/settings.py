@@ -20,8 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-h$ko6tcu-cn^pmm$t+$b0sye!_c3_(gcxq&tzu3710bu-u&gr8'
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = 'django-insecure-h$ko6tcu-cn^pmm$t+$b0sye!_c3_(gcxq&tzu3710bu-u&gr8'
+# SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -82,13 +82,8 @@ WSGI_APPLICATION = 'internetshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ItDexter1985$default',
-        'USER': 'ItDexter1985',
-        'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'ItDexter1985.mysql.pythonanywhere-services.com',
-        'OPTIONS': {'init_command': "SET NAMES 'utf8mb4';SET sql_mode='STRICT_TRANS_TABLES'", 'charset': 'utf8mb4',
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
