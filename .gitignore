@@ -1,5 +1,4 @@
 /media/
 /static/
-django.log
 *.sqlite3
 *.рус
