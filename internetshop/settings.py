@@ -28,10 +28,7 @@ DEBUG = False
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'ItDexter1985.pythonanywhere.com',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
